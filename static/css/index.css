@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/diseñoBackground.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transform: scale(1); /* Aumenta el tamaño en un 150% */
+    transform-origin: top left;
+    background-attachment: scroll;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: white;
+    font-size: 250%;
+}
+
+p{
+    color: white;
+    font-size: 30px;
+}
+
+li{
+    color: white;
+    font-size: 30px;
+}
+.main-navigation{
+    border-radius: 5px;
+    background-color: rgba(51,51,51, 0.85);
+}
+
+#list-nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#list-nav > li{
+    position: relative;
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+#list-nav > li > a{
+    text-decoration: none;
+    color: white;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    min-width: 150px;
+    z-index: 1000;
+}
+
+.dropdown li{
+    padding:  10px;
+    text-align: left;
+}
+
+.dropdown li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-family: "Consolas", sans-serif;
+}
+
+#list-nav > li:hover > .dropdown{
+    display: block;
+}
+
+#list-nav > li:hover, .dropdown li:hover{
+    background-color: #555;
+}
+
+header{
+    border-radius: 5px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(51,51,51, 0.85);
+}
+#header-img{
+    width: 50px; /* Ajusta el tamaño de la imagen */
+    height: 50px; /* Asegúrate de que la imagen sea cuadrada */
+    border-radius: 50%; /* Hace la imagen redonda */
+    border: 2px solid #000; /* Agrega un borde, opcional */
+}
+
+#header-h1{
+    vertical-align: text-bottom;
+    display: inline;
+    color: white;
+    font-family: "Consolas", sans-serif;
+    letter-spacing: 0.05em;
+    font-size: 300%;
+}
+
+#header{
+    overflow: auto;
+}
+
+.spaced{
+    margin-bottom: 1px;
+}
+
+section{
+    background-color: rgba(51,51,51, 0.85);
+    color: white;
+    border-radius: 5px;
+    padding:  20px;
+    margin: 20px;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    font-family: "Consolas", sans-serif;
+}
+
+.me h2{
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #f39c12;
+}
+
+.skills h2{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #3498db;
+}
